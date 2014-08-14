@@ -1,0 +1,80 @@
+.done-true {
+    text-decoration: line-through;
+    color: grey;
+}
+#jumboContainer {
+    background-color: #F3F3FF;
+}
+#upperContainer {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: dashed lightgrey;
+    border-width: 1px;
+    margin-left: 20%;
+    margin-right:20%;
+}
+#middleContainer {
+    background-color: white;
+    margin-bottom:0px;
+    padding-top:15px;
+    padding-bottom:80px;
+    margin-left: 20%;
+    margin-right:20%;
+}
+#bottomContainer {
+    background-color: white;
+    overflow: hidden;
+    margin-top: 0px;
+    padding-top: 10px;
+    border-top: dashed lightgray;
+    border-width: 1px;
+    margin-left: 20%;
+    margin-right:20%;
+}
+.checkboxText {
+    font-size: 16px;
+}
+#theTodos {
+    padding:0px;
+}
+#inputTodo {
+    width: 280px;
+    height: 35px;
+}
+#addBtn {
+    background: linear-gradient(#FFFFFF, #A6A6AA);
+    width: 130px;
+    border: solid;
+    border-width: 1px;
+    border-color: #99999D;
+    font-family: "Open Sans", sans-serif; font-weight: 700;
+    font-size: 13px;
+    padding: 7px;
+}
+h2 {
+    font-family: "Roboto", sans-serif; font-weight: 900; !important;
+}
+p, div, button,a {
+    font-family: "Open Sans", sans-serif; !important;
+}
+#inlineParagraph {
+    display: inline;
+    font-size: 12px;
+}
+#markAllBtn {
+    float: right;
+    padding: 0px;
+    font-size: 12px;
+}
+.rounded {
+      border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 4px 7px;
+        outline: 0;
+}
+.rounded:focus {
+    border-color: #AAAAB2;
+}
+a:link { text-decoration: none}
