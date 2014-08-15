@@ -1,40 +1,36 @@
 <div class="container">
     <div class="header">
-        <ul class="nav nav-pills pull-right">
-            <li><a href="#">Log out</a></li>
-        </ul>
         <h3 class="text-muted">Your Todo List</h3>
     </div>
     <br>
     <div class="jumbotron" id="jumboContainer">
-    <div ng-controller="TodoCtrl">
-        <div class="jumbotron"  id="upperContainer" >
-            <h2>Todos</h2>
+        <div ng-controller="TodoCtrl">
+            <div class="jumbotron"  id="upperContainer" >
+            <h2><Todos></Todos></h2>
             </div>
-        <div class="jumbotron"  id="middleContainer" >
+            <div class="jumbotron"  id="middleContainer" >
 
-            <form class="form-inline" ng-submit="addTodo()" >
-                <div class="form-group">
-                    <label class="sr-only" for="inputTodo"></label>
-                    <input type="text" id="inputTodo" class="rounded" ng-model="state.newTodo" placeholder="What needs to be done?">
-                </div>
-                <button class="btn" id="addBtn" >Add Todo</button>
-            </form>
-
-          <div ng-repeat="todo in state.todoList">
-            <div class="checkboxText">
+                <form class="form-inline" ng-submit="addTodo()" >
+                    <div class="form-group">
+                        <label class="sr-only" for="inputTodo"></label>
+                        <input type="text" id="inputTodo" class="rounded" ng-model="state.newTodo" placeholder="What needs to be done?">
+                    </div>
+                    <button class="btn" id="addBtn" >Add Todo</button>
+                </form>
+                <div ng-repeat="todo in state.todoList">
+                    <div class="checkboxText">
                 <div class="checkbox">
                     <label class="sr-only" for="theTodos"></label>
-                    <input type="checkbox" id="theTodos" ng-model="todo.done" ng-change="addValue(todo.done)">
+                    <input class = "done-true" type="checkbox" id="theTodos" ng-model="todo.done" ng-change="addValue(todo.id, todo.done)">
                     <span class="done-{{todo.done}}" ng-bind="todo.text"></span>
                 </div>
+                    </div>
+                </div>
             </div>
-        </div>
-         </div>
-        <div class="jumbotron" id="bottomContainer">
-            <p  id="inlineParagraph" ng-bind="flag"></p><p id="inlineParagraph"> items left</p>
+            <div class="jumbotron" id="bottomContainer">
+                <p  class="inlineParagraph" ng-bind="flag"></p><p class="inlineParagraph"> items left</p>
             <button id="markAllBtn" type="button" class="btn btn-link" ng-click="markAllAsComplete()">Mark all as complete</button>
-        </div>
-    </div> <!--End big jumbotron -->
+            </div>
+        </div> <!--End big jumbotron -->
     </div> <!--End todoCtrl -->
 </div> <!--End container -->

@@ -37,6 +37,7 @@
 }
 #theTodos {
     padding:0px;
+    margin-top: 10px;	
 }
 #inputTodo {
     width: 280px;
@@ -58,7 +59,7 @@ h2 {
 p, div, button,a {
     font-family: "Open Sans", sans-serif; !important;
 }
-#inlineParagraph {
+.inlineParagraph {
     display: inline;
     font-size: 12px;
 }
@@ -68,11 +69,11 @@ p, div, button,a {
     font-size: 12px;
 }
 .rounded {
-      border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        padding: 4px 7px;
-        outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 4px 7px;
+    outline: 0;
 }
 .rounded:focus {
     border-color: #AAAAB2;

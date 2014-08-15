@@ -4,7 +4,7 @@
 # It assumes that you have SQLite3 installed
 
 if [ ! -f db.db ]; then
-    sqlite3 db.db < setup/createtable.sql
+    sqlite3 todoDatabase.db < setup/createtable.sql
 fi
 
 # This part uses virtualenv to create a localized python configuration

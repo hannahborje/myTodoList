@@ -1,12 +1,13 @@
 Author: Hannah Börjesson, 2014 Linköping
 
-This is a Todo Application created with a little help from AngularJS, Flask, Jinja2, Python, HTML, CSS and an SQLite3 database.
+This is a Todo Application created with a little help from AngularJS, Flask, Jinja2, Python, HTML, CSS and a SQLite3 database.
 
 *** You need:
 
 - Linux/UNIX like operating system
 - Python 2.7
 - virtualenv (for Python 2.7)
+- SQLite3
 
 There is a setup file that will help you to:
 
@@ -14,7 +15,7 @@ There is a setup file that will help you to:
 - create a virtualenv folder
 - install the Python dependencies
 
-*** To run setup file:
+*** To run the setup file:
 
     ./setup.sh
 
@@ -36,9 +37,9 @@ and for the best view of the application, please run it in Chrome
 
 *** When you are getting tired of the Todo Application (how can you ever?) you stop it by:
 
-In terminal window, write
+In terminal window
 
-    `python todo.py` using Ctrl-C.
+    use Ctrl-C.
 
 To get out of the virtualenv, write:
 
