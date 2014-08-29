@@ -6,10 +6,6 @@ angular
                 templateUrl: '../static/todo.html',
                 controller: 'TodoCtrl'
             })
-            .when('/secondPage', {
-                templateUrl: '../static/secondPage.html',
-                controller: 'SecondController'
-            })
             .otherwise({ redirectTo: '/' });
     }])
     .factory('windowAlert', [
@@ -28,7 +24,6 @@ angular
             $scope.state = {};
             $scope.state.todoList = [];
             $scope.state.retrieveNr = $scope.RETRIEVE_DEFAULT_NR;
-            $scope.undoMarkAll = true;
 
             // Add new todo to DB with checked value set to false
             $scope.addTodo = function () {
@@ -74,7 +69,6 @@ angular
                         windowAlert("Retrieval failed");
                     });
             };
-
             // Marks all visible todos to be completed. Updates DB.
             $scope.markAllAsComplete = function () {
                 console.log("Mark all as Complete: ");
@@ -93,7 +87,6 @@ angular
                      $scope.flag = $scope.state.todoList.length - trues.length;
                 },true
             );
-
             // When checkbox is checked or unchecked, the DB is updated
             $scope.addValue = function (id, value) {
                 $http

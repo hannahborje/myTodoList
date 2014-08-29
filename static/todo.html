@@ -9,7 +9,6 @@
             <h2><Todos>Todos</Todos></h2>
             </div>
             <div class="jumbotron"  id="middleContainer" >
-
                 <form class="form-inline" ng-submit="addTodo()" >
                     <div class="form-group">
                         <label class="sr-only" for="inputTodo"></label>
@@ -19,9 +18,9 @@
                 </form>
                 <div ng-repeat="todo in state.todoList">
                     <div class="checkboxText">
-                <div class="checkbox">
+                        <div class="checkbox">
                     <label class="sr-only" for="theTodos"></label>
-                    <input class = "done-true" type="checkbox" id="theTodos" ng-model="todo.done" ng-change="addValue(todo.id, todo.done)">
+                            <input class = "done-true" type="checkbox" id="theTodos" ng-model="todo.done" ng-change="addValue(todo.id, todo.done)">
                     <span class="done-{{todo.done}}" ng-bind="todo.text"></span>
                 </div>
                     </div>
